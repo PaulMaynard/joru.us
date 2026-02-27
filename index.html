@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preload" href="AB-Equinox.otf" as="font" type="font/otf" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Embed -->
     <meta property="og:title" content="Joruus was right">
@@ -10,10 +11,53 @@
     <meta property="og:url" content="http://joru.us">
     <meta property="og:type" content="website">
     <title>Joruus was right</title>
+    
+    <style>
+        body {
+            font-family: "AB Equinox";
+            text-align: justify;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        main>* {
+            max-width: 40em;
+        }
+
+        @font-face {
+            font-family: "AB Equinox";
+            src: url("AB-Equinox.otf");
+            font-display: block;
+        }
+    </style>
 </head>
 <body>
-    <div style="display: flex; justify-content: center; align-items: center;">
+    <main>
         <img src="joruus3.png" style="max-width: 100vw;" alt="Joruus was right">
-    </div>
+        <blockquote>
+            <p>“Machines and societal constructs do not define a culture’s
+            maturity, Jedi Skywalker. Maturity is defined solely by the
+            understanding and use of the Force.
+            
+            <p>“There was such a society once, Luke. A vast and shining example
+            of the heights all could aspire to. For a thousand generations we
+            stood tall among the lesser beings of the galaxy, guardians of
+            justice and order. The creators of true civilization. The Senate
+            could debate and pass laws; but it was the Jedi who turned those
+            laws into reality.</p>
+            
+            <p>“And in return, the galaxy destroyed us.</p>
+            
+            <p>“Do you truly believe that even the Emperor could have succeeded
+            in such a task without the consent of the entire galaxy? No, Luke.
+            They hated us—all the lesser beings did. Hated us for our power, and
+            our knowledge, and our wisdom. Hated us for our maturity. And that
+            hatred still exists. Waiting only for the Jedi to reemerge to blaze
+            up again.”</p>
+</blockquote>
+    </main>
 </body>
 </html>
