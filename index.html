@@ -31,20 +31,29 @@
             max-width: 40em;
         }
 
-        /* blockquote:has(a:hover, .green:hover) {
-            color: gray;
-        } */
+        blockquote:has(.green:hover) a {
+            color: #b8e221;
+        } 
 
         a {
-            color: black;
+            color: inherit;
             text-decoration: unset;
         }
-        a:hover {
+        a:hover, a:focus {
             color: #b8e221;
             text-decoration: underline;
         }
 
         .green {
+            color: #b8e221;
+        }
+        
+        .stinger {
+            color: transparent;
+            text-align: center;
+        }
+
+        blockquote:has(.green:hover) + .stinger, .stinger:hover {
             color: #b8e221;
         }
 
@@ -60,25 +69,27 @@
         <img src="joruusgreen.png" style="max-width: 100vw;" alt="Joruus was right">
         <blockquote>
             <p>“Machines and societal constructs do not define a culture’s
-            maturity, <a href="http://greenjeditemple.net" class="green">Green</a> Jedi Skywalker. Maturity is defined solely by the
+            maturity, <span class="green">Green</span> Jedi Skywalker. Maturity is defined solely by the
             understanding and use of the Force.
             
             <p>“<a href="http://greenjeditemple.net">There was such a society once</a>, Luke. A vast and shining example
             of the heights all could aspire to. For a thousand generations we
             stood tall among the lesser beings of the galaxy, guardians of
             justice and order. The creators of true civilization. The Senate
-            could debate and pass laws; but it was the <a href="http://greenjeditemple.net" class="green">Green</a> Jedi who turned those
+            could debate and pass laws; but it was the <span class="green">Green</span> Jedi who turned those
             laws into reality.</p>
             
             <p>“And in return, the galaxy destroyed us.</p>
             
             <p>“Do you truly believe that even the Emperor could have succeeded
             in such a task without the consent of the entire galaxy? No, Luke.
-            They hated us—all the lesser beings did. Hated us for our power, and
+            They hated us-all the lesser beings did. Hated us for our power, and
             our knowledge, and our wisdom. Hated us for our maturity. And that
-            hatred still exists. Waiting only for the <a href="http://greenjeditemple.net" class="green">Green</a> Jedi to reemerge to blaze
+            hatred still exists. Waiting only for the <span class="green">Green</span> Jedi to reemerge to blaze
             up again.”</p>
-</blockquote>
+
+        </blockquote>
+        <p class="stinger">Agamar Rules the Galaxy</p>
     </main>
 </body>
 </html>
